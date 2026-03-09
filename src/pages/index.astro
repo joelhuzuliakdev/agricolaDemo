@@ -340,38 +340,98 @@ import Layout from "../layouts/Layout.astro";
 
   <!-- ===== GALERÍA ===== -->
   <section class="gallery" id="galeria">
-    <div class="gallery-inner">
-      <div class="gallery-header reveal">
-        <div>
-          <div class="section-tag">Nuestro trabajo</div>
-          <h2 class="section-title">El campo<br />en <em>imágenes</em></h2>
-        </div>
-        <p>Capturas de nuestras operaciones diarias, cultivos en temporada y el paisaje que nos inspira cada día.</p>
+  <div class="gallery-inner">
+
+    <div class="gallery-header reveal">
+      <div>
+        <div class="section-tag">Nuestro trabajo</div>
+        <h2 class="section-title">
+          El campo<br />
+          en <em>imágenes</em>
+        </h2>
       </div>
-      <div class="gallery-grid">
-        <div class="gallery-item reveal reveal-delay-1">
-          <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800&q=80&auto=format&fit=crop" alt="Campo de cultivos al atardecer" loading="lazy" />
-          <div class="gallery-overlay"><span class="gallery-overlay-text">Campos de soja — Verano 2024</span></div>
-        </div>
-        <div class="gallery-item reveal reveal-delay-2">
-          <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=700&q=80&auto=format&fit=crop" alt="Maquinaria agrícola moderna" loading="lazy" />
-          <div class="gallery-overlay"><span class="gallery-overlay-text">Cosechadora John Deere S790</span></div>
-        </div>
-        <div class="gallery-item reveal reveal-delay-3">
-          <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=700&q=80&auto=format&fit=crop" alt="Trabajo en el campo" loading="lazy" />
-          <div class="gallery-overlay"><span class="gallery-overlay-text">Monitoreo de cultivos</span></div>
-        </div>
-        <div class="gallery-item reveal reveal-delay-2">
-          <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1100&q=80&auto=format&fit=crop" alt="Paisaje rural pampeano" loading="lazy" />
-          <div class="gallery-overlay"><span class="gallery-overlay-text">Llanura pampeana — Córdoba</span></div>
-        </div>
-        <div class="gallery-item reveal reveal-delay-3">
-          <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=700&q=80&auto=format&fit=crop" alt="Ganadería extensiva" loading="lazy" />
-          <div class="gallery-overlay"><span class="gallery-overlay-text">Rodeo vacuno — pasturas naturales</span></div>
-        </div>
-      </div>
+
+      <p>
+        Capturas de nuestras operaciones diarias, cultivos en temporada
+        y el paisaje que nos inspira cada día.
+      </p>
     </div>
-  </section>
+
+    <div class="gallery-grid">
+
+      <!-- SOJA -->
+      <div class="gallery-item reveal reveal-delay-1">
+        <img
+          src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&q=80&auto=format&fit=crop"
+          alt="Campo de soja"
+          loading="lazy"
+        />
+        <div class="gallery-overlay">
+          <span class="gallery-overlay-text">
+            Campos de soja — Verano 2024
+          </span>
+        </div>
+      </div>
+
+      <!-- COSECHADORA -->
+      <div class="gallery-item reveal reveal-delay-2">
+        <img
+          src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=700&q=80&auto=format&fit=crop"
+          alt="Cosechadora agrícola"
+          loading="lazy"
+        />
+        <div class="gallery-overlay">
+          <span class="gallery-overlay-text">
+            Cosechadora John Deere S790
+          </span>
+        </div>
+      </div>
+
+      <!-- DRON MONITOREO -->
+      <div class="gallery-item reveal reveal-delay-3">
+        <img
+          src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=700&q=80&auto=format&fit=crop"
+          alt="Dron monitoreando cultivos"
+          loading="lazy"
+        />
+        <div class="gallery-overlay">
+          <span class="gallery-overlay-text">
+            Monitoreo de cultivos
+          </span>
+        </div>
+      </div>
+
+      <!-- LLANURA PAMPEANA -->
+      <div class="gallery-item reveal reveal-delay-2">
+        <img
+          src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1100&q=80&auto=format&fit=crop"
+          alt="Llanura pampeana"
+          loading="lazy"
+        />
+        <div class="gallery-overlay">
+          <span class="gallery-overlay-text">
+            Llanura pampeana — Córdoba
+          </span>
+        </div>
+      </div>
+
+      <!-- GANADERÍA -->
+      <div class="gallery-item reveal reveal-delay-3">
+        <img
+          src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=700&q=80&auto=format&fit=crop"
+          alt="Ganadería vacuna"
+          loading="lazy"
+        />
+        <div class="gallery-overlay">
+          <span class="gallery-overlay-text">
+            Rodeo vacuno — pasturas naturales
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
   <!-- ===== CERTIFICACIONES ===== -->
   <section class="certs" id="certificaciones">
