@@ -635,25 +635,44 @@ import Layout from "../layouts/Layout.astro";
   h1, h2, h3, h4 { font-family: "Cormorant Garamond", serif; }
 
   /* NAVBAR */
-  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 150; padding: 1.5rem 4rem; display: flex; justify-content: space-between; align-items: center; transition: all 0.4s ease; }
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1.5rem 4rem; display: flex; justify-content: space-between; align-items: center; transition: all 0.4s ease; }
   nav.scrolled { background: rgba(26,46,26,0.97); backdrop-filter: blur(12px); padding: 1rem 4rem; box-shadow: 0 2px 40px rgba(0,0,0,0.3); }
   .nav-logo { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
   .nav-logo-mark { width: 38px; height: 38px; background: var(--verde-oliva); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
   .nav-logo-mark svg { width: 20px; height: 20px; fill: var(--beige); }
   .nav-brand { font-family: "Cormorant Garamond", serif; font-size: 1.5rem; font-weight: 500; color: var(--blanco); letter-spacing: 0.02em; }
-  .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+  .nav-links { display: flex; gap: 2.5rem; list-style: none;}
   .nav-links a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.875rem; font-weight: 400; letter-spacing: 0.06em; text-transform: uppercase; transition: color 0.3s; }
   .nav-links a:hover { color: var(--verde-sage); }
   .nav-cta { background: var(--verde-oliva); color: var(--blanco) !important; padding: 0.6rem 1.5rem; border-radius: 2px; }
   .nav-cta:hover { background: var(--verde-claro) !important; }
-  .nav-mobile-btn { display: none; background: none; border: none; cursor: pointer; flex-direction: column; gap: 5px; padding: 4px; z-index: 200; position: relative; }
+  .nav-mobile-btn { display: none; background: none; border: none; cursor: pointer; flex-direction: column; gap: 5px; padding: 4px; z-index: 110; }
   .nav-mobile-btn span { display: block; width: 24px; height: 2px; background: white; transition: all 0.3s; transform-origin: center; }
   .nav-mobile-btn.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
   .nav-mobile-btn.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
   .nav-mobile-btn.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-  .nav-links.mobile-open { display: flex !important; flex-direction: column; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(15,26,15,0.98); backdrop-filter: blur(16px); align-items: center; justify-content: center; gap: 2.5rem; z-index: 105; }
-  .nav-links.mobile-open { display: flex !important; flex-direction: column; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(10,20,10,0.98); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); align-items: center; justify-content: center; gap: 2.5rem; z-index: 150; }
-  .nav-links.mobile-open .nav-cta { padding: 0.8rem 2.5rem; font-size: 1rem; }
+  .nav-links.mobile-open { display: flex !important; flex-direction: column; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(15,26,15,0.98); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); align-items: center; justify-content: flex-start; gap: 0; z-index: 105; padding: 6rem 2rem 3rem; height: 37vh;}
+  .nav-links.mobile-open a { display: block; font-size: 1.1rem; letter-spacing: 0.14em; padding: 1.1rem 1.5rem; color: rgba(255, 255, 255, 0.85) !important; transition: color 0.2s, background 0.2s;}
+  .nav-links.mobile-open a:hover { color: var(--verde-sage) !important; background: rgba(181, 196, 154, 0.06); }
+  .nav-links.mobile-open .nav-cta {
+    background: var(--verde-oliva) !important;
+    color: var(--blanco) !important;
+    border-radius: 2px;
+    margin-top: 1.5rem;
+    padding: 1rem 2.5rem !important;
+    display: inline-block;
+    width: auto;
+    border-bottom: none !important;
+    font-size: 0.9rem !important;
+  }
+  .nav-links.mobile-open .nav-cta:hover {
+    background: var(--verde-claro) !important;
+  }
+  .nav-links.mobile-open li { width: 100%; text-align: center; border-bottom: 1px solid rgba(181, 196, 154, 0.08); }
+  .nav-links.mobile-open li:first-child { border-top: 1px solid rgba(181, 196, 154, 0.08); }
+  .nav-links.mobile-open .nav-cta:hover {
+    background: var(--verde-claro) !important;
+  }
 
   /* HERO */
   .hero { position: relative; height: 100vh; min-height: 700px; display: flex; align-items: center; overflow: hidden; }
